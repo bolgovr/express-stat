@@ -1,0 +1,21 @@
+{
+  "author": "Bolgov Roman <bolgovr@gmail.com>",
+  "name": "express-stat",
+  "description": "Monitoring and stats for express application",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bolgovr/express-stat.git"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": "~0.6.8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.0.1"
+  },
+  "optionalDependencies": {}
+}
