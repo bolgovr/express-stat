@@ -26,12 +26,35 @@ describe('express', function () {
       });
     });
   });
+  describe('middleware', function () {
+    var app, stat, browser;
+    beforeEach(function (done) {
+      app = require('./fixtures/express-app.js');
+      stat = require('../index.js');
+      app.use(stat.stats());
+      browser = new Zombie();
+      done();
+    });
+
+    it('should expose stats method to response', function (done) {
+      app.get('/test', function (req, res) {
+        process.nextTick(function () {
+          /*assert.ok(res.stats);*/
+          done();
+        });
+      });
+      app.listen(8083, function () {
+        browser.visit('http://localhost:8083/test', function () {
+        });
+      });
+    });
+  });
   describe('application with stat middleware', function () {
     var app, browser, stat;
     beforeEach(function (done) {
       app = require('./fixtures/express-app.js');
       stat = require('../index.js');
-      app.use(stat.stats({'port': 8084}));
+      app.use(stat.stats());
       app.listen(8083);
       browser = new Zombie();
       done();
