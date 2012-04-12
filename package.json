@@ -15,7 +15,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "~1.0.1"
+    "mocha": "~1.0.1",
+    "express": "~2.5.9",
+    "zombie": "~0.12.15"
   },
   "optionalDependencies": {}
 }
