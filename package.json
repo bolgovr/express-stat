@@ -13,7 +13,9 @@
   "engines": {
     "node": "~0.6.8"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eventemitter2": "~0.4.9"
+  },
   "devDependencies": {
     "mocha": "~1.0.1",
     "express": "~2.5.9",
