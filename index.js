@@ -1,2 +1,4 @@
-
-module.exports = require('./lib/express-middleware.js');
+module.exports = {
+  'middleware': require('./lib/express-middleware.js'),
+  'statCollector': require('./lib/Stats.js')
+};
