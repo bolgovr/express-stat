@@ -14,5 +14,3 @@ lib-cov
 node_modules/
 /npm-debug.log
 /config/runtime.json
-
-test.js
