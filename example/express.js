@@ -1,6 +1,6 @@
 var express = require('express');
 var Stats = require('../index.js').statCollector;
-var opts = {'transport': 'http', 'port': 8081, 'url': '/stats', 'statServers': ['abc']};
+var opts = {'transport': 'http', 'port': 8081, 'url': '/stats', 'statServers': ['abc'], 'maxCountersValue': 5};
 var st = new Stats(opts);
 var counters = {
   'ips': function (req, res) {
