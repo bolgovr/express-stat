@@ -2,7 +2,7 @@
   "author": "Bolgov Roman <bolgovr@gmail.com>",
   "name": "express-stat",
   "description": "Monitoring and stats for express application",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/bolgovr/express-stat.git"
@@ -14,7 +14,8 @@
     "node": "~0.6.8"
   },
   "dependencies": {
-    "eventemitter2": "~0.4.9"
+    "eventemitter2": "~0.4.9",
+    "redis": "~0.7.2"
   },
   "devDependencies": {
     "mocha": "~1.0.1",
