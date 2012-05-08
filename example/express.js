@@ -26,3 +26,4 @@ app.get('/ok', function (req, res) {
 });
 
 app.listen(8080);
+console.log('example app listen on 8080 port, for harvesting stats visit same host with 8081 port');
